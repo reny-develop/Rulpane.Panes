@@ -1,5 +1,0 @@
-{
-  "$schema": "rulpane/paneset/v1",
-  // The rules the countdown view was written for, from their start.
-  "r": "countdown"
-}

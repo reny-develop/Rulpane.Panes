@@ -1,6 +1,0 @@
-{
-  "$schema": "rulpane/paneset/v1",
-  // Reversi projects nothing, so the board and the turn the view reads are its state fields.
-  "r": "reversi",
-  "b": { "board": "$board", "turn": "$turn" }
-}
