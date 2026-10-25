@@ -1,0 +1,20 @@
+# kind	name	path	sample
+#
+# One line per release, in the order they are submitted: a sample or a paneset may name only
+# what is recorded before it, and each name's first release is @1, which is what the samples
+# and the panesets below name.
+View	reny-develop/approval	views/approval.json	samples/approval.json
+View	reny-develop/countdown	views/countdown.json	samples/countdown.json
+View	reny-develop/roster	views/roster.json	samples/roster.json
+View	reny-develop/reversi	views/reversi.json	samples/reversi.json
+View	reny-develop/stages	views/stages.json	samples/stages.json
+View	reny-develop/progress	views/progress.json	samples/progress.json
+View	reny-develop/grid-game	views/grid-game.json	samples/grid-game.json
+Theme	reny-develop/paper	themes/paper.json	samples/paper.json
+Theme	reny-develop/meadow	themes/meadow.json	samples/meadow.json
+Paneset	reny-develop/request-stages	panesets/request-stages.json	
+Paneset	reny-develop/approval-stages	panesets/approval-stages.json	
+Paneset	reny-develop/checklist-progress	panesets/checklist-progress.json	
+Paneset	reny-develop/signatures-progress	panesets/signatures-progress.json	
+Paneset	reny-develop/tictactoe-grid-game	panesets/tictactoe-grid-game.json	
+Paneset	reny-develop/reversi-grid-game	panesets/reversi-grid-game.json	

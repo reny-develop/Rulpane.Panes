@@ -1,0 +1,23 @@
+{
+  "$schema": "rulealize/view/v1",
+  "ruleSet": "roster@1",
+  "title": "This week's roster",
+  "layout": [
+    { "c": "table", "title": "Assigned", "bind": "$assigned",
+      "columns": [ { "key": "shift", "label": "Shift" }, { "key": "who", "label": "Who" } ] },
+    // Every pair of who and shift is a move of its own, too many to lay out as buttons.
+    { "c": "actions", "title": "Put someone on a shift", "inputs": ["assign"], "as": "select" },
+    { "c": "actions", "title": "Take someone off", "inputs": ["release"] },
+    { "c": "heading", "text": "The week" },
+    { "c": "table", "title": "Staff", "bind": "$staff",
+      "columns": [ { "key": "name", "label": "Name" }, { "key": "capacity", "label": "Shifts at most" }, { "key": "senior", "label": "Senior" } ] },
+    { "c": "table", "title": "Shifts", "bind": "$shifts",
+      "columns": [ { "key": "id", "label": "Shift" }, { "key": "day", "label": "Day" }, { "key": "senior", "label": "Needs a senior" } ] },
+    { "c": "table", "title": "Recently", "bind": "$log" }
+  ],
+  "names": {
+    "inputs": { "assign": "Put on", "release": "Take off" },
+    "params": { "who": "who", "shift": "shift" },
+    "values": { "assign": "put on", "release": "took off", "complete": "Every shift covered", "stuck": "Nobody left fits" }
+  }
+}

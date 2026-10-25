@@ -1,0 +1,6 @@
+{
+  "$schema": "rulpane/paneset/v1",
+  // An expense claim on paper: the approval view shows every tone the theme colours.
+  "r": "approval",
+  "v": "reny-develop/approval@1"
+}

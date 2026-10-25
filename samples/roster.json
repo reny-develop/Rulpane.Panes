@@ -1,0 +1,5 @@
+{
+  "$schema": "rulpane/paneset/v1",
+  // The rules the roster view was written for, from their start.
+  "r": "roster"
+}

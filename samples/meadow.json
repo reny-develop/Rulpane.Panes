@@ -1,0 +1,8 @@
+{
+  "$schema": "rulpane/paneset/v1",
+  // A checklist in the meadow: the progress view, part of the way through.
+  "r": "checklist",
+  "v": "reny-develop/progress@1",
+  "b": { "all": "$steps", "done": "$done" },
+  "s": { "steps": ["contract", "equipment", "induction", "payroll"], "done": ["contract"] }
+}

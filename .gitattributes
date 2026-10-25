@@ -1,0 +1,6 @@
+# Every text file is stored LF, and the documents stay LF in a working copy too: the Gallery
+# records each one's SHA-256 as GitHub serves it, and tool/check.sh reads them as committed.
+* text=auto
+*.json text eol=lf
+*.tsv text eol=lf
+*.sh text eol=lf
