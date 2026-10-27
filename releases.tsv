@@ -3,14 +3,29 @@
 # One line per release, in the order they are submitted: a sample or a paneset may name only
 # what is recorded before it, and each name's first release is @1, which is what the samples
 # and the panesets below name.
-View	reny-develop/approval	views/approval.json	samples/approval.json
-View	reny-develop/roster	views/roster.json	samples/roster.json
-View	reny-develop/stages	views/stages.json	samples/stages.json
-View	reny-develop/progress	views/progress.json	samples/progress.json
+View	reny-develop/split-bill-view	views/split-bill.json	samples/split-bill.json
+View	reny-develop/split-bill-ja-view	views/split-bill-ja.json	samples/split-bill-ja.json
+View	reny-develop/packing-list-view	views/packing-list.json	samples/packing-list.json
+View	reny-develop/packing-list-ja-view	views/packing-list-ja.json	samples/packing-list-ja.json
+View	reny-develop/scoreboard-view	views/scoreboard.json	samples/scoreboard.json
+View	reny-develop/scoreboard-ja-view	views/scoreboard-ja.json	samples/scoreboard-ja.json
+View	reny-develop/reversi-view	views/reversi.json	samples/reversi.json
+View	reny-develop/reversi-ja-view	views/reversi-ja.json	samples/reversi-ja.json
+View	reny-develop/minesweeper-view	views/minesweeper.json	samples/minesweeper.json
+View	reny-develop/minesweeper-ja-view	views/minesweeper-ja.json	samples/minesweeper-ja.json
+View	reny-develop/chess-view	views/chess.json	samples/chess.json
+View	reny-develop/chess-ja-view	views/chess-ja.json	samples/chess-ja.json
 Theme	reny-develop/paper	themes/paper.json	samples/paper.json
 Theme	reny-develop/meadow	themes/meadow.json	samples/meadow.json
-Paneset	reny-develop/expense-claim	panesets/expense-claim.json	
-Paneset	reny-develop/onboarding	panesets/onboarding.json	
-Paneset	reny-develop/sign-off	panesets/sign-off.json	
-Paneset	reny-develop/shift-request	panesets/shift-request.json	
-Paneset	reny-develop/shift-roster	panesets/shift-roster.json	
+Paneset	reny-develop/split-bill	panesets/split-bill.json	
+Paneset	reny-develop/split-bill-ja	panesets/split-bill-ja.json	
+Paneset	reny-develop/packing-list	panesets/packing-list.json	
+Paneset	reny-develop/packing-list-ja	panesets/packing-list-ja.json	
+Paneset	reny-develop/scoreboard	panesets/scoreboard.json	
+Paneset	reny-develop/scoreboard-ja	panesets/scoreboard-ja.json	
+Paneset	reny-develop/reversi	panesets/reversi.json	
+Paneset	reny-develop/reversi-ja	panesets/reversi-ja.json	
+Paneset	reny-develop/minesweeper	panesets/minesweeper.json	
+Paneset	reny-develop/minesweeper-ja	panesets/minesweeper-ja.json	
+Paneset	reny-develop/chess	panesets/chess.json	
+Paneset	reny-develop/chess-ja	panesets/chess-ja.json	
