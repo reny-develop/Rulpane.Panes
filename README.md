@@ -65,7 +65,7 @@ To submit, push, run it with the pushed commit, and open each issue in turn, wai
 Gallery's answer before the next — from its submit page with the fields in the file, or:
 
 ```sh
-gh issue create -R reny-develop/Rulpane.Gallery --label submission --title "Submit reny-develop/approval" --body-file work/issue/01-approval.md
+gh issue create -R reny-develop/Rulpane.Gallery --label submission --title "Submit reny-develop/split-bill-view" --body-file work/issue/01-split-bill-view.md
 ```
 
 ## License
