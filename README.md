@@ -5,8 +5,9 @@ as they are submitted to the [Gallery](https://github.com/reny-develop/Rulpane.G
 each, under `reny-develop/<name>`. They are submitted the same way as anybody's and held to the
 same checks; nothing about them is official beyond who wrote them.
 
-> **Not submitted yet.** Until they are, Rulpane bundles these same documents under their bare
-> names (`v=split-bill`, `p=split-bill`).
+> **Recorded in the Gallery** at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
+> each as `@1`: `p=reny-develop/split-bill@1` opens. Rulpane still bundles the same documents
+> under their bare names (`v=split-bill`, `p=split-bill`).
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |
