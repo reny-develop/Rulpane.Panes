@@ -1,6 +1,6 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "scoreboard@1",
+  "ruleSet": "Rulealize.RuleSet.Scoreboard@1",
   "title": "Scoreboard",
   "layout": [
     {

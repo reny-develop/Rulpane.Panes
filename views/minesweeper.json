@@ -1,6 +1,6 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "minesweeper@1",
+  "ruleSet": "Rulealize.RuleSet.Minesweeper@1",
   "title": "Minesweeper",
   "layout": [
     {

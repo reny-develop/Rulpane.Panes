@@ -1,4 +1,4 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "chess"
+  "r": "Rulealize.RuleSet.Chess@1.0.0"
 }

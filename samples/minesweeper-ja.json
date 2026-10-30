@@ -1,4 +1,4 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "minesweeper"
+  "r": "Rulealize.RuleSet.Minesweeper@1.0.0"
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "packing-list@1",
+  "ruleSet": "Rulealize.RuleSet.PackingList@1",
   "title": "持ち物チェックリスト",
   "layout": [
     {

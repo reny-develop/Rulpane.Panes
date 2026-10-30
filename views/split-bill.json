@@ -1,6 +1,6 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "split-bill@1",
+  "ruleSet": "Rulealize.RuleSet.SplitBill@1",
   "title": "Split the bill",
   "layout": [
     {

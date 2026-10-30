@@ -5,9 +5,9 @@ as they are submitted to the [Gallery](https://github.com/reny-develop/Rulpane.G
 each, under `reny-develop/<name>`. They are submitted the same way as anybody's and held to the
 same checks; nothing about them is official beyond who wrote them.
 
-> **Recorded in the Gallery** at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
-> each as `@1`: `p=reny-develop/split-bill@1` opens. The split-bill and scoreboard views and
-> panesets have an `@2`, which adds changing a name, removing someone and clearing everything.
+> **Recorded in the Gallery** as `@2`: `p=reny-develop/split-bill@2` opens. Each `@1`, recorded
+> at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
+> named a rule set Rulpane bundled then, and is withheld.
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |
@@ -39,15 +39,16 @@ same checks; nothing about them is official beyond who wrote them.
 | paneset | `reny-develop/chess-ja` | [panesets/chess-ja.json](panesets/chess-ja.json) | itself |
 
 A sample is a paneset that leaves out the part the release fills: `v` for a view, `t` for a
-theme. The rule sets they name are those Rulpane bundles, which stay bundled.
+theme. The rule sets they name are in the [Rulealize Registry](https://reny-develop.github.io/Rulealize.Registry/),
+each from a repository of its own: `Rulealize.RuleSet.SplitBill`, `PackingList`, `Scoreboard`,
+`Minesweeper`, `Reversi` and `Chess`.
 
 ## The order they are submitted in
 
 [`releases.tsv`](releases.tsv) lists them in that order, views first, then themes, then panesets,
 **one at a time, each once the one before it is recorded**. The Gallery numbers each name's
 releases from 1, and a sample or a paneset can name only what it already holds, so the themes'
-samples and the panesets name each view by a release recorded before them: `@1`, or `@2` for the
-split-bill and scoreboard views. A changed file is submitted again from its own line, and becomes
+samples and the panesets name each view by a release recorded before them, `@2`. A changed file is submitted again from its own line, and becomes
 the next release of its name. A view carries `-view` because a Gallery name is one kind for good,
 and the paneset of the same screen holds the bare name a link opens: `p=reny-develop/split-bill`.
 

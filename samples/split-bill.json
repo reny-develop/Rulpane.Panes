@@ -1,6 +1,6 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "split-bill",
+  "r": "Rulealize.RuleSet.SplitBill@1.0.0",
   "s": {
     "people": [
       "Ann",

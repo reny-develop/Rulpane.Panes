@@ -1,4 +1,4 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "reversi"
+  "r": "Rulealize.RuleSet.Reversi@1.0.0"
 }

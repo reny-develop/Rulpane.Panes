@@ -1,6 +1,6 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "scoreboard",
+  "r": "Rulealize.RuleSet.Scoreboard@1.0.0",
   "s": {
     "players": [
       "Ann",

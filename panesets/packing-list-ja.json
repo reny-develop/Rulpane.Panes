@@ -1,7 +1,7 @@
 {
   "$schema": "rulpane/paneset/v1",
-  "r": "packing-list",
-  "v": "reny-develop/packing-list-ja-view@1",
+  "r": "Rulealize.RuleSet.PackingList@1.0.0",
+  "v": "reny-develop/packing-list-ja-view@2",
   "s": {
     "items": [
       "財布",
