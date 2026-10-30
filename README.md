@@ -7,7 +7,7 @@ same checks; nothing about them is official beyond who wrote them.
 
 > **Recorded in the Gallery** at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
 > each as `@1`: `p=reny-develop/split-bill@1` opens. The split-bill and scoreboard views and
-> panesets have an `@2`, which adds removing someone and clearing everything.
+> panesets have an `@2`, which adds changing a name, removing someone and clearing everything.
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |

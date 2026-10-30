@@ -79,6 +79,13 @@
     },
     {
       "c": "actions",
+      "title": "名前を変える",
+      "inputs": [
+        "rename"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "メンバーを外す",
       "inputs": [
         "leave"
@@ -105,13 +112,15 @@
       "pay": "記録する",
       "undo": "最後の記録を取り消す",
       "leave": "外す",
-      "clear": "メンバーと記録を全部消す"
+      "clear": "メンバーと記録を全部消す",
+      "rename": "変える"
     },
     "params": {
       "name": "名前",
       "who": "誰が",
       "what": "何に",
-      "amount": "金額"
+      "amount": "金額",
+      "to": "新しい名前"
     },
     "codes": {
       "name.taken": "その名前の人はもういます。"

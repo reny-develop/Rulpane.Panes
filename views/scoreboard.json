@@ -43,6 +43,13 @@
     },
     {
       "c": "actions",
+      "title": "Change a name",
+      "inputs": [
+        "rename"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "Remove a player",
       "inputs": [
         "leave"
@@ -69,12 +76,14 @@
       "join": "Add",
       "undo": "Take back the last score",
       "leave": "Remove",
-      "clear": "Clear every player and score"
+      "clear": "Clear every player and score",
+      "rename": "Change"
     },
     "params": {
       "player": "Player",
       "points": "Points",
-      "name": "Name"
+      "name": "Name",
+      "to": "New name"
     },
     "codes": {
       "name.taken": "Someone has that name already."

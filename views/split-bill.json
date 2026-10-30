@@ -79,6 +79,13 @@
     },
     {
       "c": "actions",
+      "title": "Change a name",
+      "inputs": [
+        "rename"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "Remove someone",
       "inputs": [
         "leave"
@@ -105,13 +112,15 @@
       "pay": "Record",
       "undo": "Take back the last payment",
       "leave": "Remove",
-      "clear": "Clear everyone and every payment"
+      "clear": "Clear everyone and every payment",
+      "rename": "Change"
     },
     "params": {
       "name": "Name",
       "who": "Who paid",
       "what": "For",
-      "amount": "Amount"
+      "amount": "Amount",
+      "to": "New name"
     },
     "codes": {
       "name.taken": "Someone has that name already."

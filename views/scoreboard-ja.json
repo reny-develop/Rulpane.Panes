@@ -43,6 +43,13 @@
     },
     {
       "c": "actions",
+      "title": "名前を変える",
+      "inputs": [
+        "rename"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "プレイヤーを外す",
       "inputs": [
         "leave"
@@ -69,12 +76,14 @@
       "join": "足す",
       "undo": "最後の点を取り消す",
       "leave": "外す",
-      "clear": "プレイヤーと点を全部消す"
+      "clear": "プレイヤーと点を全部消す",
+      "rename": "変える"
     },
     "params": {
       "player": "プレイヤー",
       "points": "点",
-      "name": "名前"
+      "name": "名前",
+      "to": "新しい名前"
     },
     "codes": {
       "name.taken": "その名前の人はもういます。"
