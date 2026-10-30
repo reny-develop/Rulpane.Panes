@@ -3,7 +3,8 @@
 # Writes the issue each release in releases.tsv is submitted with, and reads every one of them
 # with the Gallery's own tool/Admit, in order, into a copy of the Gallery's ledger: what the
 # Gallery would answer on each issue, and then its check of the whole ledger. A file the ledger
-# already holds, to the byte, as the newest release of its name is recorded, and is skipped.
+# already holds, to the byte, as the newest release of its name not withheld is recorded, and is
+# skipped.
 #
 #   bash tool/check.sh [<commit>]      (from the top of the repository)
 #
@@ -28,9 +29,9 @@ mkdir -p "$root/work/issue" "$work/gallery" "$work/read"
 cp -r "$gallery/ledger" "$gallery/release" "$work/gallery/" || exit 2
 cd "$work/gallery"
 
-# The SHA-256 of the newest release of a name, or nothing when it has none.
+# The SHA-256 of the newest release of a name that is not withheld, or nothing when it has none.
 recorded() {
-    grep -F "\"id\": \"$1\"," ledger/submitted.json | tail -n 1 | sed -n 's/.*"sha256": "\([0-9a-f]*\)".*/\1/p'
+    grep -F "\"id\": \"$1\"," ledger/submitted.json | grep -v '"withheld"' | tail -n 1 | sed -n 's/.*"sha256": "\([0-9a-f]*\)".*/\1/p'
 }
 
 failed=0
