@@ -43,9 +43,23 @@
     },
     {
       "c": "actions",
+      "title": "Remove a player",
+      "inputs": [
+        "leave"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "Entered one wrong?",
       "inputs": [
         "undo"
+      ]
+    },
+    {
+      "c": "actions",
+      "title": "Start again with nobody",
+      "inputs": [
+        "clear"
       ]
     }
   ],
@@ -53,7 +67,9 @@
     "inputs": {
       "score": "Enter",
       "join": "Add",
-      "undo": "Take back the last score"
+      "undo": "Take back the last score",
+      "leave": "Remove",
+      "clear": "Clear every player and score"
     },
     "params": {
       "player": "Player",

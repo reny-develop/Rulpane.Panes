@@ -1,7 +1,7 @@
 {
   "$schema": "rulpane/paneset/v1",
   "r": "split-bill",
-  "v": "reny-develop/split-bill-ja-view@1",
+  "v": "reny-develop/split-bill-ja-view@2",
   "s": {
     "people": [
       "あおい",

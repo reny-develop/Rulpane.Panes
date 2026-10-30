@@ -43,9 +43,23 @@
     },
     {
       "c": "actions",
+      "title": "プレイヤーを外す",
+      "inputs": [
+        "leave"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "入れ間違えたら",
       "inputs": [
         "undo"
+      ]
+    },
+    {
+      "c": "actions",
+      "title": "全部消して始める",
+      "inputs": [
+        "clear"
       ]
     }
   ],
@@ -53,7 +67,9 @@
     "inputs": {
       "score": "入れる",
       "join": "足す",
-      "undo": "最後の点を取り消す"
+      "undo": "最後の点を取り消す",
+      "leave": "外す",
+      "clear": "プレイヤーと点を全部消す"
     },
     "params": {
       "player": "プレイヤー",

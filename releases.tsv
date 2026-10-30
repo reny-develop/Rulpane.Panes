@@ -1,8 +1,8 @@
 # kind	name	path	sample
 #
 # One line per release, in the order they are submitted: a sample or a paneset may name only
-# what is recorded before it, and each name's first release is @1, which is what the samples
-# and the panesets below name.
+# what is recorded before it. The panesets name the split-bill and scoreboard views @2, which
+# adds removing someone and clearing everything; the themes' samples still name them @1.
 View	reny-develop/split-bill-view	views/split-bill.json	samples/split-bill.json
 View	reny-develop/split-bill-ja-view	views/split-bill-ja.json	samples/split-bill-ja.json
 View	reny-develop/packing-list-view	views/packing-list.json	samples/packing-list.json

@@ -79,9 +79,23 @@
     },
     {
       "c": "actions",
+      "title": "メンバーを外す",
+      "inputs": [
+        "leave"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "記録を間違えたら",
       "inputs": [
         "undo"
+      ]
+    },
+    {
+      "c": "actions",
+      "title": "全部消して始める",
+      "inputs": [
+        "clear"
       ]
     }
   ],
@@ -89,7 +103,9 @@
     "inputs": {
       "join": "足す",
       "pay": "記録する",
-      "undo": "最後の記録を取り消す"
+      "undo": "最後の記録を取り消す",
+      "leave": "外す",
+      "clear": "メンバーと記録を全部消す"
     },
     "params": {
       "name": "名前",

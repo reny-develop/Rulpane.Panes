@@ -6,8 +6,8 @@ each, under `reny-develop/<name>`. They are submitted the same way as anybody's 
 same checks; nothing about them is official beyond who wrote them.
 
 > **Recorded in the Gallery** at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
-> each as `@1`: `p=reny-develop/split-bill@1` opens. Rulpane still bundles the same documents
-> under their bare names (`v=split-bill`, `p=split-bill`).
+> each as `@1`: `p=reny-develop/split-bill@1` opens. The split-bill and scoreboard views and
+> panesets have an `@2`, which adds removing someone and clearing everything.
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |
@@ -46,8 +46,9 @@ theme. The rule sets they name are those Rulpane bundles, which stay bundled.
 [`releases.tsv`](releases.tsv) lists them in that order, views first, then themes, then panesets,
 **one at a time, each once the one before it is recorded**. The Gallery numbers each name's
 releases from 1, and a sample or a paneset can name only what it already holds, so the themes'
-samples and the panesets name the views as `reny-develop/<name>-view@1` — which is what each view
-is, recorded first and once. A view carries `-view` because a Gallery name is one kind for good,
+samples and the panesets name each view by a release recorded before them: `@1`, or `@2` for the
+split-bill and scoreboard views. A changed file is submitted again from its own line, and becomes
+the next release of its name. A view carries `-view` because a Gallery name is one kind for good,
 and the paneset of the same screen holds the bare name a link opens: `p=reny-develop/split-bill`.
 
 ## Checking them
@@ -58,8 +59,9 @@ bash tool/check.sh [<commit>]
 
 It reads the files as the commit has them (HEAD if left out), which is what the Gallery clones,
 writes the issue each one is submitted with to `work/issue/`, numbered in the order to submit
-them, and reads every one in that order with the Gallery's own `tool/Admit` into an empty
-ledger, then runs its check over the whole ledger. It needs the Gallery checked out beside this
+them, and reads every one in that order with the Gallery's own `tool/Admit` into a copy of the
+Gallery's ledger, then runs its check over the whole ledger. A file the Gallery already holds as
+the newest release of its name is recorded, and is skipped. It needs the Gallery checked out beside this
 repository, and Rulpane beside that.
 
 To submit, push, run it with the pushed commit, and open each issue in turn, waiting for the

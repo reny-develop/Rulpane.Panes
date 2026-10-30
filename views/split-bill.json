@@ -79,9 +79,23 @@
     },
     {
       "c": "actions",
+      "title": "Remove someone",
+      "inputs": [
+        "leave"
+      ]
+    },
+    {
+      "c": "actions",
       "title": "Entered one wrong?",
       "inputs": [
         "undo"
+      ]
+    },
+    {
+      "c": "actions",
+      "title": "Start again with nobody",
+      "inputs": [
+        "clear"
       ]
     }
   ],
@@ -89,7 +103,9 @@
     "inputs": {
       "join": "Add",
       "pay": "Record",
-      "undo": "Take back the last payment"
+      "undo": "Take back the last payment",
+      "leave": "Remove",
+      "clear": "Clear everyone and every payment"
     },
     "params": {
       "name": "Name",

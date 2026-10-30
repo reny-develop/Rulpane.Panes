@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 #
 # Writes the issue each release in releases.tsv is submitted with, and reads every one of them
-# with the Gallery's own tool/Admit, in order, into an empty ledger: what the Gallery would
-# answer on each issue, and then its check of the whole ledger.
+# with the Gallery's own tool/Admit, in order, into a copy of the Gallery's ledger: what the
+# Gallery would answer on each issue, and then its check of the whole ledger. A file the ledger
+# already holds, to the byte, as the newest release of its name is recorded, and is skipped.
 #
 #   bash tool/check.sh [<commit>]      (from the top of the repository)
 #
@@ -23,14 +24,22 @@ dotnet build "$gallery/tool/Admit" -c Release --nologo -v quiet >/dev/null || ex
 admit() { dotnet run --no-build -c Release --project "$gallery/tool/Admit" -- "$@"; }
 
 rm -rf "$root/work/issue"
-mkdir -p "$root/work/issue" "$work/gallery/ledger" "$work/read"
-printf '{\n  "releases": [\n  ]\n}\n' > "$work/gallery/ledger/submitted.json"
+mkdir -p "$root/work/issue" "$work/gallery" "$work/read"
+cp -r "$gallery/ledger" "$gallery/release" "$work/gallery/" || exit 2
 cd "$work/gallery"
+
+# The SHA-256 of the newest release of a name, or nothing when it has none.
+recorded() {
+    grep -F "\"id\": \"$1\"," ledger/submitted.json | tail -n 1 | sed -n 's/.*"sha256": "\([0-9a-f]*\)".*/\1/p'
+}
 
 failed=0
 n=0
 while IFS=$'\t' read -r kind name path sample; do
     [[ -z $kind || $kind == \#* ]] && continue
+    if [[ $(sha256sum < "$work/checkout/$path" | cut -d' ' -f1) == "$(recorded "$name")" ]]; then
+        continue
+    fi
     n=$((n + 1))
     issue="$root/work/issue/$(printf '%02d' $n)-${name#*/}.md"
     cat > "$issue" <<ISSUE
