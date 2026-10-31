@@ -1,7 +1,7 @@
 {
   "$schema": "rulpane/paneset/v1",
   "r": "Rulealize.RuleSet.SplitBill@1.0.0",
-  "v": "reny-develop/split-bill-ja-view@2",
+  "v": "reny-develop/split-bill-ja-view@3",
   "s": {
     "people": [
       "あおい",

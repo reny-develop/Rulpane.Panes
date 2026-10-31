@@ -8,6 +8,11 @@ same checks; nothing about them is official beyond who wrote them.
 > **Recorded in the Gallery** as `@2`: `p=reny-develop/split-bill@2` opens. Each `@1`, recorded
 > at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
 > named a rule set Rulpane bundled then, and is withheld.
+>
+> Not recorded yet: the calculator, weight-log and budget (views and panesets, `@1`), submitted once
+> `Rulealize.RuleSet.Calculator`, `WeightLog` and `Budget` 1.0.0 are in the Registry; and release 3
+> of the split-bill, packing-list and scoreboard views and panesets, which lay the screens out
+> with buttons on each line, the packing list's naming `Rulealize.RuleSet.PackingList@1.1.0`.
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |
@@ -23,6 +28,12 @@ same checks; nothing about them is official beyond who wrote them.
 | view | `reny-develop/minesweeper-ja-view` | [views/minesweeper-ja.json](views/minesweeper-ja.json) | [samples/minesweeper-ja.json](samples/minesweeper-ja.json) |
 | view | `reny-develop/chess-view` | [views/chess.json](views/chess.json) | [samples/chess.json](samples/chess.json) |
 | view | `reny-develop/chess-ja-view` | [views/chess-ja.json](views/chess-ja.json) | [samples/chess-ja.json](samples/chess-ja.json) |
+| view | `reny-develop/calculator-view` | [views/calculator.json](views/calculator.json) | [samples/calculator.json](samples/calculator.json) |
+| view | `reny-develop/calculator-ja-view` | [views/calculator-ja.json](views/calculator-ja.json) | [samples/calculator-ja.json](samples/calculator-ja.json) |
+| view | `reny-develop/weight-log-view` | [views/weight-log.json](views/weight-log.json) | [samples/weight-log.json](samples/weight-log.json) |
+| view | `reny-develop/weight-log-ja-view` | [views/weight-log-ja.json](views/weight-log-ja.json) | [samples/weight-log-ja.json](samples/weight-log-ja.json) |
+| view | `reny-develop/budget-view` | [views/budget.json](views/budget.json) | [samples/budget.json](samples/budget.json) |
+| view | `reny-develop/budget-ja-view` | [views/budget-ja.json](views/budget-ja.json) | [samples/budget-ja.json](samples/budget-ja.json) |
 | theme | `reny-develop/paper` | [themes/paper.json](themes/paper.json) | [samples/paper.json](samples/paper.json) |
 | theme | `reny-develop/meadow` | [themes/meadow.json](themes/meadow.json) | [samples/meadow.json](samples/meadow.json) |
 | paneset | `reny-develop/split-bill` | [panesets/split-bill.json](panesets/split-bill.json) | itself |
@@ -37,19 +48,26 @@ same checks; nothing about them is official beyond who wrote them.
 | paneset | `reny-develop/minesweeper-ja` | [panesets/minesweeper-ja.json](panesets/minesweeper-ja.json) | itself |
 | paneset | `reny-develop/chess` | [panesets/chess.json](panesets/chess.json) | itself |
 | paneset | `reny-develop/chess-ja` | [panesets/chess-ja.json](panesets/chess-ja.json) | itself |
+| paneset | `reny-develop/calculator` | [panesets/calculator.json](panesets/calculator.json) | itself |
+| paneset | `reny-develop/calculator-ja` | [panesets/calculator-ja.json](panesets/calculator-ja.json) | itself |
+| paneset | `reny-develop/weight-log` | [panesets/weight-log.json](panesets/weight-log.json) | itself |
+| paneset | `reny-develop/weight-log-ja` | [panesets/weight-log-ja.json](panesets/weight-log-ja.json) | itself |
+| paneset | `reny-develop/budget` | [panesets/budget.json](panesets/budget.json) | itself |
+| paneset | `reny-develop/budget-ja` | [panesets/budget-ja.json](panesets/budget-ja.json) | itself |
 
 A sample is a paneset that leaves out the part the release fills: `v` for a view, `t` for a
 theme. The rule sets they name are in the [Rulealize Registry](https://reny-develop.github.io/Rulealize.Registry/),
 each from a repository of its own: `Rulealize.RuleSet.SplitBill`, `PackingList`, `Scoreboard`,
-`Minesweeper`, `Reversi` and `Chess`.
+`Minesweeper`, `Reversi`, `Chess`, `Calculator`, `WeightLog` and `Budget`.
 
 ## The order they are submitted in
 
 [`releases.tsv`](releases.tsv) lists them in that order, views first, then themes, then panesets,
-**one at a time, each once the one before it is recorded**. The Gallery numbers each name's
-releases from 1, and a sample or a paneset can name only what it already holds, so the themes'
-samples and the panesets name each view by a release recorded before them, `@2`. A changed file is submitted again from its own line, and becomes
-the next release of its name. A view carries `-view` because a Gallery name is one kind for good,
+and those added later after them in the same order, **one at a time, each once the one before it
+is recorded**. The Gallery numbers each name's releases from 1, and a sample or a paneset can name
+only what it already holds, so the themes' samples and the panesets name each view by a release
+recorded before them. A changed file is submitted again from its own line, and becomes the next
+release of its name. A view carries `-view` because a Gallery name is one kind for good,
 and the paneset of the same screen holds the bare name a link opens: `p=reny-develop/split-bill`.
 
 ## Checking them

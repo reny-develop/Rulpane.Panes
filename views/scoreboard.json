@@ -24,49 +24,52 @@
           "key": "total",
           "label": "Total"
         }
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Enter a score",
-      "inputs": [
-        "score"
       ],
-      "as": "select"
-    },
-    {
-      "c": "actions",
-      "title": "Add a player",
-      "inputs": [
-        "join"
+      "rowActions": [
+        {
+          "input": "score",
+          "args": {
+            "player": "player"
+          }
+        },
+        {
+          "input": "rename",
+          "args": {
+            "name": "player"
+          }
+        },
+        {
+          "input": "leave",
+          "args": {
+            "name": "player"
+          }
+        }
       ]
     },
     {
-      "c": "actions",
-      "title": "Change a name",
-      "inputs": [
-        "rename"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Remove a player",
-      "inputs": [
-        "leave"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Entered one wrong?",
-      "inputs": [
-        "undo"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Start again with nobody",
-      "inputs": [
-        "clear"
+      "c": "columns",
+      "blocks": [
+        {
+          "c": "actions",
+          "title": "Add a player",
+          "inputs": [
+            "join"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "Entered one wrong?",
+          "inputs": [
+            "undo"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "Start again with nobody",
+          "inputs": [
+            "clear"
+          ]
+        }
       ]
     }
   ],

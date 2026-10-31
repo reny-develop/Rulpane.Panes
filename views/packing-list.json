@@ -1,48 +1,72 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "Rulealize.RuleSet.PackingList@1",
+  "ruleSet": "Rulealize.RuleSet.PackingList@1.1",
   "title": "Packing list",
   "layout": [
     {
-      "c": "stats",
+      "c": "progress",
       "items": [
         {
-          "label": "Still to pack",
-          "bind": "counts.left"
-        },
-        {
           "label": "Packed",
-          "bind": "counts.packed"
+          "bind": "counts.packed",
+          "of": "counts.all"
         }
       ]
     },
     {
-      "c": "actions",
-      "title": "Still to pack",
-      "inputs": [
-        "pack"
-      ]
-    },
-    {
-      "c": "list",
-      "title": "In the bag",
-      "bind": "packed"
-    },
-    {
-      "c": "actions",
-      "title": "Add an item",
-      "inputs": [
-        "add"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Take out or remove",
-      "inputs": [
-        "unpack",
-        "remove"
+      "c": "columns",
+      "widths": [
+        3,
+        2
       ],
-      "as": "select"
+      "blocks": [
+        {
+          "c": "table",
+          "title": "The list",
+          "bind": "list",
+          "columns": [
+            {
+              "key": "item",
+              "label": "Item"
+            },
+            {
+              "key": "state",
+              "label": "",
+              "tone": {
+                "packed": "ok",
+                "left": "warn"
+              }
+            }
+          ],
+          "rowActions": [
+            {
+              "input": "pack",
+              "args": {
+                "item": "item"
+              }
+            },
+            {
+              "input": "unpack",
+              "args": {
+                "item": "item"
+              }
+            },
+            {
+              "input": "remove",
+              "args": {
+                "item": "item"
+              }
+            }
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "Add an item",
+          "inputs": [
+            "add"
+          ]
+        }
+      ]
     }
   ],
   "names": {
@@ -57,6 +81,10 @@
     },
     "codes": {
       "item.listed": "That is on the list already."
+    },
+    "values": {
+      "packed": "Packed",
+      "left": "Not yet"
     }
   }
 }

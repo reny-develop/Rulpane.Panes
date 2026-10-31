@@ -1,48 +1,72 @@
 {
   "$schema": "rulealize/view/v1",
-  "ruleSet": "Rulealize.RuleSet.PackingList@1",
+  "ruleSet": "Rulealize.RuleSet.PackingList@1.1",
   "title": "持ち物チェックリスト",
   "layout": [
     {
-      "c": "stats",
+      "c": "progress",
       "items": [
         {
-          "label": "残り",
-          "bind": "counts.left"
-        },
-        {
           "label": "詰めた",
-          "bind": "counts.packed"
+          "bind": "counts.packed",
+          "of": "counts.all"
         }
       ]
     },
     {
-      "c": "actions",
-      "title": "まだ詰めていないもの",
-      "inputs": [
-        "pack"
-      ]
-    },
-    {
-      "c": "list",
-      "title": "かばんの中",
-      "bind": "packed"
-    },
-    {
-      "c": "actions",
-      "title": "持ち物を足す",
-      "inputs": [
-        "add"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "出す・消す",
-      "inputs": [
-        "unpack",
-        "remove"
+      "c": "columns",
+      "widths": [
+        3,
+        2
       ],
-      "as": "select"
+      "blocks": [
+        {
+          "c": "table",
+          "title": "持ち物",
+          "bind": "list",
+          "columns": [
+            {
+              "key": "item",
+              "label": "持ち物"
+            },
+            {
+              "key": "state",
+              "label": "",
+              "tone": {
+                "packed": "ok",
+                "left": "warn"
+              }
+            }
+          ],
+          "rowActions": [
+            {
+              "input": "pack",
+              "args": {
+                "item": "item"
+              }
+            },
+            {
+              "input": "unpack",
+              "args": {
+                "item": "item"
+              }
+            },
+            {
+              "input": "remove",
+              "args": {
+                "item": "item"
+              }
+            }
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "持ち物を足す",
+          "inputs": [
+            "add"
+          ]
+        }
+      ]
     }
   ],
   "names": {
@@ -57,6 +81,10 @@
     },
     "codes": {
       "item.listed": "もうリストにあります。"
+    },
+    "values": {
+      "packed": "入れた",
+      "left": "まだ"
     }
   }
 }

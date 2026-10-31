@@ -8,11 +8,17 @@
       "items": [
         {
           "label": "合計",
-          "bind": "summary.total"
+          "bind": "summary.total",
+          "format": {
+            "suffix": " 円"
+          }
         },
         {
           "label": "1 人あたり",
-          "bind": "summary.share"
+          "bind": "summary.share",
+          "format": {
+            "suffix": " 円"
+          }
         },
         {
           "label": "人数",
@@ -21,35 +27,67 @@
       ]
     },
     {
-      "c": "table",
-      "title": "精算",
-      "bind": "balances",
-      "columns": [
+      "c": "columns",
+      "widths": [
+        3,
+        2
+      ],
+      "blocks": [
         {
-          "key": "name",
-          "label": "名前"
+          "c": "table",
+          "title": "精算",
+          "bind": "balances",
+          "columns": [
+            {
+              "key": "name",
+              "label": "名前"
+            },
+            {
+              "key": "paid",
+              "label": "立て替えた",
+              "format": {
+                "suffix": " 円"
+              }
+            },
+            {
+              "key": "pays",
+              "label": "払う",
+              "format": {
+                "suffix": " 円"
+              }
+            },
+            {
+              "key": "receives",
+              "label": "受け取る",
+              "format": {
+                "suffix": " 円"
+              }
+            }
+          ],
+          "rowActions": [
+            {
+              "input": "rename",
+              "args": {
+                "name": "name"
+              }
+            },
+            {
+              "input": "leave",
+              "args": {
+                "name": "name"
+              }
+            }
+          ]
         },
         {
-          "key": "paid",
-          "label": "立て替えた"
-        },
-        {
-          "key": "pays",
-          "label": "払う"
-        },
-        {
-          "key": "receives",
-          "label": "受け取る"
+          "c": "actions",
+          "title": "立て替えを記録する",
+          "inputs": [
+            "pay"
+          ],
+          "as": "select"
         }
       ]
-    },
-    {
-      "c": "actions",
-      "title": "立て替えを記録する",
-      "inputs": [
-        "pay"
-      ],
-      "as": "select"
     },
     {
       "c": "table",
@@ -66,43 +104,37 @@
         },
         {
           "key": "amount",
-          "label": "金額"
+          "label": "金額",
+          "format": {
+            "suffix": " 円"
+          }
         }
       ]
     },
     {
-      "c": "actions",
-      "title": "メンバーを足す",
-      "inputs": [
-        "join"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "名前を変える",
-      "inputs": [
-        "rename"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "メンバーを外す",
-      "inputs": [
-        "leave"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "記録を間違えたら",
-      "inputs": [
-        "undo"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "全部消して始める",
-      "inputs": [
-        "clear"
+      "c": "columns",
+      "blocks": [
+        {
+          "c": "actions",
+          "title": "メンバーを足す",
+          "inputs": [
+            "join"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "記録を間違えたら",
+          "inputs": [
+            "undo"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "全部消して始める",
+          "inputs": [
+            "clear"
+          ]
+        }
       ]
     }
   ],

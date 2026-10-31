@@ -1,7 +1,7 @@
 {
   "$schema": "rulpane/paneset/v1",
   "r": "Rulealize.RuleSet.Scoreboard@1.0.0",
-  "v": "reny-develop/scoreboard-ja-view@2",
+  "v": "reny-develop/scoreboard-ja-view@3",
   "s": {
     "players": [
       "あおい",

@@ -2,8 +2,10 @@
 #
 # One line per release, in the order they are submitted: a sample or a paneset may name only
 # what is recorded before it. Release 1 of each named a rule set Rulpane bundled then and is
-# withheld, so the themes, whose files did not change, are submitted again with new samples, and
-# everything here names release 2.
+# withheld, so the themes, whose files did not change, are submitted again with new samples. A
+# changed file is submitted again from its own line and becomes the next release of its name: the
+# split-bill, packing-list and scoreboard views are release 3, and their panesets name that. The
+# calculator, weight-log and budget came after, and are release 1.
 View	reny-develop/split-bill-view	views/split-bill.json	samples/split-bill.json
 View	reny-develop/split-bill-ja-view	views/split-bill-ja.json	samples/split-bill-ja.json
 View	reny-develop/packing-list-view	views/packing-list.json	samples/packing-list.json
@@ -30,3 +32,15 @@ Paneset	reny-develop/minesweeper	panesets/minesweeper.json
 Paneset	reny-develop/minesweeper-ja	panesets/minesweeper-ja.json	
 Paneset	reny-develop/chess	panesets/chess.json	
 Paneset	reny-develop/chess-ja	panesets/chess-ja.json	
+View	reny-develop/calculator-view	views/calculator.json	samples/calculator.json
+View	reny-develop/calculator-ja-view	views/calculator-ja.json	samples/calculator-ja.json
+Paneset	reny-develop/calculator	panesets/calculator.json	
+Paneset	reny-develop/calculator-ja	panesets/calculator-ja.json	
+View	reny-develop/weight-log-view	views/weight-log.json	samples/weight-log.json
+View	reny-develop/weight-log-ja-view	views/weight-log-ja.json	samples/weight-log-ja.json
+View	reny-develop/budget-view	views/budget.json	samples/budget.json
+View	reny-develop/budget-ja-view	views/budget-ja.json	samples/budget-ja.json
+Paneset	reny-develop/weight-log	panesets/weight-log.json	
+Paneset	reny-develop/weight-log-ja	panesets/weight-log-ja.json	
+Paneset	reny-develop/budget	panesets/budget.json	
+Paneset	reny-develop/budget-ja	panesets/budget-ja.json	

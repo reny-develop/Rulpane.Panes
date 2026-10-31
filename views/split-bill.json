@@ -8,11 +8,13 @@
       "items": [
         {
           "label": "Total",
-          "bind": "summary.total"
+          "bind": "summary.total",
+          "format": {}
         },
         {
           "label": "Each",
-          "bind": "summary.share"
+          "bind": "summary.share",
+          "format": {}
         },
         {
           "label": "People",
@@ -21,35 +23,61 @@
       ]
     },
     {
-      "c": "table",
-      "title": "Who settles what",
-      "bind": "balances",
-      "columns": [
+      "c": "columns",
+      "widths": [
+        3,
+        2
+      ],
+      "blocks": [
         {
-          "key": "name",
-          "label": "Name"
+          "c": "table",
+          "title": "Who settles what",
+          "bind": "balances",
+          "columns": [
+            {
+              "key": "name",
+              "label": "Name"
+            },
+            {
+              "key": "paid",
+              "label": "Paid",
+              "format": {}
+            },
+            {
+              "key": "pays",
+              "label": "Pays",
+              "format": {}
+            },
+            {
+              "key": "receives",
+              "label": "Gets back",
+              "format": {}
+            }
+          ],
+          "rowActions": [
+            {
+              "input": "rename",
+              "args": {
+                "name": "name"
+              }
+            },
+            {
+              "input": "leave",
+              "args": {
+                "name": "name"
+              }
+            }
+          ]
         },
         {
-          "key": "paid",
-          "label": "Paid"
-        },
-        {
-          "key": "pays",
-          "label": "Pays"
-        },
-        {
-          "key": "receives",
-          "label": "Gets back"
+          "c": "actions",
+          "title": "Record a payment",
+          "inputs": [
+            "pay"
+          ],
+          "as": "select"
         }
       ]
-    },
-    {
-      "c": "actions",
-      "title": "Record a payment",
-      "inputs": [
-        "pay"
-      ],
-      "as": "select"
     },
     {
       "c": "table",
@@ -66,43 +94,35 @@
         },
         {
           "key": "amount",
-          "label": "Amount"
+          "label": "Amount",
+          "format": {}
         }
       ]
     },
     {
-      "c": "actions",
-      "title": "Add someone",
-      "inputs": [
-        "join"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Change a name",
-      "inputs": [
-        "rename"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Remove someone",
-      "inputs": [
-        "leave"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Entered one wrong?",
-      "inputs": [
-        "undo"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "Start again with nobody",
-      "inputs": [
-        "clear"
+      "c": "columns",
+      "blocks": [
+        {
+          "c": "actions",
+          "title": "Add someone",
+          "inputs": [
+            "join"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "Entered one wrong?",
+          "inputs": [
+            "undo"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "Start again with nobody",
+          "inputs": [
+            "clear"
+          ]
+        }
       ]
     }
   ],

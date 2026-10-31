@@ -24,49 +24,52 @@
           "key": "total",
           "label": "合計"
         }
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "点を入れる",
-      "inputs": [
-        "score"
       ],
-      "as": "select"
-    },
-    {
-      "c": "actions",
-      "title": "プレイヤーを足す",
-      "inputs": [
-        "join"
+      "rowActions": [
+        {
+          "input": "score",
+          "args": {
+            "player": "player"
+          }
+        },
+        {
+          "input": "rename",
+          "args": {
+            "name": "player"
+          }
+        },
+        {
+          "input": "leave",
+          "args": {
+            "name": "player"
+          }
+        }
       ]
     },
     {
-      "c": "actions",
-      "title": "名前を変える",
-      "inputs": [
-        "rename"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "プレイヤーを外す",
-      "inputs": [
-        "leave"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "入れ間違えたら",
-      "inputs": [
-        "undo"
-      ]
-    },
-    {
-      "c": "actions",
-      "title": "全部消して始める",
-      "inputs": [
-        "clear"
+      "c": "columns",
+      "blocks": [
+        {
+          "c": "actions",
+          "title": "プレイヤーを足す",
+          "inputs": [
+            "join"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "入れ間違えたら",
+          "inputs": [
+            "undo"
+          ]
+        },
+        {
+          "c": "actions",
+          "title": "全部消して始める",
+          "inputs": [
+            "clear"
+          ]
+        }
       ]
     }
   ],
