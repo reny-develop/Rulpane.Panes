@@ -5,14 +5,12 @@ as they are submitted to the [Gallery](https://github.com/reny-develop/Rulpane.G
 each, under `reny-develop/<name>`. They are submitted the same way as anybody's and held to the
 same checks; nothing about them is official beyond who wrote them.
 
-> **Recorded in the Gallery** as `@2`: `p=reny-develop/split-bill@2` opens. Each `@1`, recorded
-> at [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
-> named a rule set Rulpane bundled then, and is withheld.
->
-> Not recorded yet: the calculator, weight-log and budget (views and panesets, `@1`), submitted once
-> `Rulealize.RuleSet.Calculator`, `WeightLog` and `Budget` 1.0.0 are in the Registry; and release 3
-> of the split-bill, packing-list and scoreboard views and panesets, which lay the screens out
-> with buttons on each line, the packing list's naming `Rulealize.RuleSet.PackingList@1.1.0`.
+> **Recorded in the Gallery**: `p=reny-develop/split-bill@3` opens. The split-bill, packing-list
+> and scoreboard views and panesets are at `@3`, which lays the screens out with buttons on each
+> line, the packing list's naming `Rulealize.RuleSet.PackingList@1.1.0`; the calculator,
+> weight-log and budget at `@1`; the rest at `@2`. The first releases, recorded at
+> [`70954cd`](https://github.com/reny-develop/Rulpane.Panes/commit/70954cd456a40ee863e750d8ea154c1f684e4d2a),
+> named a rule set Rulpane bundled then, and are withheld.
 
 | Kind | Name | File | Tried in |
 | --- | --- | --- | --- |
